@@ -28,5 +28,6 @@ class Graph:
     return self.graph
 
   def printAdjacencyList(self):
-    for i in self.graph:
+    sorted_set = sorted(self.graph)
+    for i in sorted_set:
       print(i, i.neighbors)

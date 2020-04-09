@@ -7,7 +7,10 @@ class Node:
     self.neighbors.add(node)
 
   def removeNeighbor(self, node):
-    self.neighbors.remove(node)
+    self.neighbors.pop(node, None)
 
   def __repr__(self):
     return str(self.value)
+
+  def __lt__(self, other):
+    return self.value < other.value
