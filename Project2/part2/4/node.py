@@ -8,9 +8,6 @@ class Node:
 
   def removeNeighbor(self, node):
     self.neighbors.pop(node, None)
-
-  def getWeight(self, node):
-    return self.neighbors[node]
     
   def __repr__(self):
     return str(self.value)
